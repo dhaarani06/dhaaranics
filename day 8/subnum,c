@@ -1,0 +1,31 @@
+#include<stdio.h>
+int add(int a, int b) 
+{
+    return a + b;
+}
+
+int sub(int a, int b) 
+{
+    return a - b;
+}
+int multi(int a, int b) 
+{
+    return a * b;
+}
+int divi(int a, int b)
+{
+    if (b == 0)
+    {
+        printf("Error: Division by zero\n");
+        return 0;
+    }
+    return a / b;
+}
+int main() 
+{
+    printf("Addition of two numbers: %d\n", add(5, 7));
+    printf("Subtraction of two numbers: %d\n", sub(5, 7));
+    printf("Multiplication of two numbers: %d\n", multi(5, 7));
+    printf("Division of two numbers: %d\n", divi(30, 0));  // 
+    return 0;
+}
